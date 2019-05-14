@@ -1,5 +1,6 @@
 namespace HIDKeyboard{
-
+/*
+*/
 //% block = "block 1"
 export function block1(){
 	//empty
