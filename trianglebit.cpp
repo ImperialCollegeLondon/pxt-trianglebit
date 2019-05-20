@@ -2,9 +2,13 @@
 #include "MicroBit.h"
 
 MicroBit uBit;
+using namespace pxt;
+uBit.init();
 
-int main(){
-	uBit.init();
-	uBit.display.scroll("HELLO WORLD!");
-	release_fibre();
+namespace trianglebit {
+	 void testing(){
+		uBit.display.scroll("HELLO WORLD");
+	 }
+
 }
+release_fibre();

@@ -111,8 +111,17 @@ namespace trianglebit
     *	Send string through BLE
     *
     //% block
+    //% subcategory=Inputs
+    //% group=Inputs
     //% text.defl="enter string"
     export function sendstr(text: string){
     //send string
     }
-}
+
+    //% block
+    //% subcategory=Inputs
+    //% group=Inputs
+    export function testing(){
+    }
+
+    }
