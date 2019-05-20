@@ -98,6 +98,8 @@ namespace trianglebit
     //% weight=100
     //% blockId=tb_onevent 
     //% block="When touch pad %button| is %event"
+    //% button.fieldEditor="gridpicker" button.fieldOptions.columns=5
+    //% event.fieldEditor="gridpicker" event.fieldOptions.columns=2
     //% subcategory=Inputs
     //% group=Inputs
     export function onEvent(button: TBButtons, event: TBEvents, handler: Action)
