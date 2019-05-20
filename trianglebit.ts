@@ -1,7 +1,6 @@
-namespace trianglebit
-{
-//%block
-export function test(){
-}
+namespace trianglebit{
+	//%block
+	export function test(){
+	}
 
 }
