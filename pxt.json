@@ -8,9 +8,7 @@
 	},
 	"files": [
 		"README.md",
-		"trianglebit.ts",
-		"trianglebit.h",
-		"trianglebit.cpp"
+		"trianglebit.ts"
 	],
 	"testFiles": [
 		"test.ts"
