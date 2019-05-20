@@ -27,15 +27,15 @@ enum TBEvents {
   */
 enum TBButtons {
     //% block="button1"
-    Button1,
+    Button1 = 0,
     //% block="button2"
-    Button2,
+    Button2 = 1,
     //% block="button3"
-    Button3,
+    Button3 = 2,
     //% block="button4"
-    Button4,
+    Button4 = 3,
     //% block="joystick1"
-    Joystick1
+    Joystick1 = 4
 }
 
 /**
