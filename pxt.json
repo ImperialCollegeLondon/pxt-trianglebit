@@ -1,0 +1,17 @@
+{
+	"name" : "trianglebit",
+	"version": "0.0",
+	"description": "testing",
+	"license": "MIT",
+	"dependencies": {
+		"core": "*"
+	},
+	"files": [
+		"README.md",
+		"main.ts"
+	],
+	"testFiles": [
+		"test.ts"
+	],
+	"public": false
+}
