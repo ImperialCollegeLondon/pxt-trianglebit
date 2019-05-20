@@ -95,11 +95,12 @@ namespace trianglebit
     /**
       * Registers event code
       */
-    //% weight=90
-    //% blockId=tb_onevent block="on %button|%event"
+    //% weight=100
+    //% blockId=tb_onevent 
+    //% block="When touch pad %button| is %event"
     //% subcategory=Inputs
     //% group=Inputs
-    export function onEvent(button: TBPins, event: TBEvents, handler: Action)
+    export function onEvent(button: TBButtons, event: TBEvents, handler: Action)
     {
         
     }
