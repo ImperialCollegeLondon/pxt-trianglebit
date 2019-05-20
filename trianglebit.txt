@@ -18,10 +18,8 @@ enum TBPins {
  * Button events
  */
 enum TBEvents {
-    //% block="high"
-    High = DAL.MICROBIT_BUTTON_EVT_UP,
-    //% block="low"
-    Low = DAL.MICROBIT_BUTTON_EVT_DOWN
+    released = 0,
+    pressed = 1
 }
 
 /**
