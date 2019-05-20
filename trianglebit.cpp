@@ -3,7 +3,7 @@
 
 namespace trianglebit {
 	 //% block
-	 void testing(){
+	 void helloworld(){
 		uBit.display.scroll("HELLO WORLD");
 	 }
 

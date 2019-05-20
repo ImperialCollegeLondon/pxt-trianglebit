@@ -1,6 +1,7 @@
 namespace trianglebit{
 	//%block
-	export function test(){
+    export function test() {
+        helloworld();
 	}
 
 }

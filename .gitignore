@@ -1,3 +1,7 @@
 *.opensdf
 *.opendb
 *.db
+*.suo
+*.sqlite
+*.js
+*.map
