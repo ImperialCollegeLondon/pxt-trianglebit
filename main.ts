@@ -105,4 +105,14 @@ namespace trianglebit
     {
         
     }
+
+
+    /**
+    *	Send string through BLE
+    *
+    //% block
+    //% text.defl="enter string"
+    export function sendstr(text: string){
+    //send string
+    }
 }
