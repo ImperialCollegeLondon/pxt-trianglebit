@@ -108,8 +108,8 @@ namespace trianglebit
 
 
     /**
-    *	Send string through BLE
-    *
+      *	Send string through BLE
+      */
     //% block
     //% subcategory=Inputs
     //% group=Inputs
@@ -121,7 +121,9 @@ namespace trianglebit
     //% block
     //% subcategory=Inputs
     //% group=Inputs
-    export function testing(){
+    export function testing()
+    {
+    uBit.display.scroll("HELLOWORLD");
     }
 
     }
