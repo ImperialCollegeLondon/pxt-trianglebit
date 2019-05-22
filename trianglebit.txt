@@ -106,7 +106,37 @@ namespace trianglebit
     {
         
     }
+    
+    /**
+      * Read dial
+      *
+      */
+    //% blockId="trianglebit_read_dial" block="dial"
+    //% weight=90
+    //% subcategory=Inputs
+    //% group=Inputs
+    export function readDial( ): number
+    {
+        //return pins.analogReadPin(AnalogPin.P0);
+    }
 
+    
+    /**
+      * Read joystick values
+      *
+      * @param axis Axis to read
+      */
+    //% blockId="trianglebit_read_joystick" block="joystick %axis"
+    //% weight=90
+    //% subcategory=Inputs
+    //% group=Inputs
+    export function readJoystick(axis: BCJoystick): number
+    {
+        //if (axis == BCJoystick.X)
+        //    return pins.analogReadPin(AnalogPin.P1);
+        //else
+        //    return pins.analogReadPin(AnalogPin.P2);
+    }
 
     /**
       *	Send string through BLE
