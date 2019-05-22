@@ -130,12 +130,12 @@ namespace trianglebit
     //% weight=90
     //% subcategory=Inputs
     //% group=Inputs
-    export function readJoystick(axis: BCJoystick): number
+    export function readJoystick(axis: TBJoystick): number
     {
-        //if (axis == BCJoystick.X)
-        //    return pins.analogReadPin(AnalogPin.P1);
+        //if (axis == TBJoystick.X)
+        //    return pins.analogReadPin(AnalogPin.P1);      //need to know what pins specifically are going to be used
         //else
-        //    return pins.analogReadPin(AnalogPin.P2);
+        //    return pins.analogReadPin(AnalogPin.P2);      //same here
     }
 
     /**
