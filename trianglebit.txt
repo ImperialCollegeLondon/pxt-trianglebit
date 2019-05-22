@@ -12,6 +12,10 @@ enum TBPins {
     Button4 = DAL.MICROBIT_ID_IO_P15,
     //% block="joystick1"
     Joystick1 = DAL.MICROBIT_ID_IO_P8
+    //% block="joystick2"
+    Joystick2 = DAL.MICROBIT_ID_IO_P10
+    //% block="dial"
+    Dial = DAL.MICROBIT_ID_IO_P11
 }
 
 /**
@@ -34,8 +38,8 @@ enum TBButtons {
     Button3 = 2,
     //% block="button4"
     Button4 = 3,
-    //% block="joystick1"
-    Joystick1 = 4
+    ////% block="joystick1"
+    //Joystick1 = 4
 }
 
 /**
