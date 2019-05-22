@@ -117,7 +117,7 @@ namespace trianglebit
     //% group=Inputs
     export function readDial( ): number
     {
-        //return pins.analogReadPin(AnalogPin.P0);
+        //return pins.analogReadPin(AnalogPin.P0);          //need to know what pins specifically are going to be used
     }
 
     
