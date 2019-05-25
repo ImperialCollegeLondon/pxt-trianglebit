@@ -3,7 +3,7 @@
 #include "KeyboardService.h"
 
 namespace trianglebit{
-
+/*
     export function init() : void{
         DigitalOut col9(P0_12, 0);
 
@@ -60,7 +60,7 @@ namespace trianglebit{
             HID_DEBUG("sending %d chars\r\n", len);
         }
     }
-
+*/
     //%block
     export function main() : void{
         uBit.serial.writeline("running main...");
@@ -72,6 +72,6 @@ namespace trianglebit{
 
     //%block
     export function test() {
-        uBit.serial.writeline("running test...");
+        console.log("running test...");
 	}
 }
