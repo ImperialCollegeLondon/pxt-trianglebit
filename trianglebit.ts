@@ -60,17 +60,18 @@ namespace trianglebit{
             HID_DEBUG("sending %d chars\r\n", len);
         }
     }
+
     //%block
     export function main() : void{
-        serial.writeline("running main...");
+        uBit.serial.writeline("running main...");
         init();
-        serial.writeline("init finished");
-        serial.writeline("sending string j");
+        uBit.serial.writeline("init finished");
+        uBit.serial.writeline("sending string j");
         send_string('j');
     }
 
     //%block
     export function test() {
-        helloworld();
+        uBit.serial.writeline("running test...");
 	}
 }
