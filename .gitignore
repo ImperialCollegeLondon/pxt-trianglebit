@@ -5,3 +5,5 @@
 *.sqlite
 *.js
 *.map
+.vs/VSWorkspaceState.json
+*.sqlite
