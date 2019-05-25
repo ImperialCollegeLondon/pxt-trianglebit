@@ -1,6 +1,3 @@
-#include "mbed.h"
-#include "ble/BLE.h"
-#include "KeyboardService.h"
 
 namespace trianglebit{
 /*
