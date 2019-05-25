@@ -62,7 +62,10 @@ namespace trianglebit{
     }
     //%block
     export function main() : void{
+        serial.writeline("running main...");
         init();
+        serial.writeline("init finished");
+        serial.writeline("sending string j");
         send_string('j');
     }
 
