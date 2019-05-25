@@ -60,7 +60,7 @@ namespace trianglebit{
             HID_DEBUG("sending %d chars\r\n", len);
         }
     }
-*/
+
     //%block
     export function main() : void{
         uBit.serial.writeline("running main...");
@@ -69,9 +69,9 @@ namespace trianglebit{
         uBit.serial.writeline("sending string j");
         send_string('j');
     }
-
+*/
     //%block
     export function test() {
-        console.log("running test...");
+        uBit.serial.send((MSTR)"running test...");
 	}
 }
