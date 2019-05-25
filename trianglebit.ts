@@ -3,10 +3,6 @@
 #include "KeyboardService.h"
 
 namespace trianglebit{
-	//%block
-    export function test() {
-        helloworld();
-	}
 
     export function init() : void{
         DigitalOut col9(P0_12, 0);
@@ -52,7 +48,7 @@ namespace trianglebit{
             connected_led = !connected_led;
     }
 
-    export function send_string(c : const char) : void{
+    export function send_string(c : char) : void{
         if (!kbdServicePtr)
             return;
 
@@ -64,9 +60,14 @@ namespace trianglebit{
             HID_DEBUG("sending %d chars\r\n", len);
         }
     }
-
+    //%block
     export function main() : void{
         init();
-
+        send_string('j');
     }
+
+    //%block
+    export function test() {
+        helloworld();
+	}
 }
