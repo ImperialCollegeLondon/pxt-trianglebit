@@ -58,6 +58,26 @@ enum TBJoystick {
 //% weight=10 color=#F47442 icon="\uf11b"
 namespace trianglebit
 {
+    
+    let is_init: boolean = false;
+    let handlers_pressed: Action[] = [
+        () => { },
+        () => { },
+        () => { },
+        () => { },
+        () => { },
+        () => { },
+    ];
+    let handlers_released: Action[] = [
+        () => { },
+        () => { },
+        () => { },
+        () => { },
+        () => { },
+        () => { },
+    ];
+    let last_button_states: number = 0;
+    
     /**
       * Registers event code
       */
@@ -70,8 +90,57 @@ namespace trianglebit
     //% group=Inputs
     export function onEvent(button: TBButtons, event: TBEvents, handler: Action, p: DigitalPin)
     {
-        
+        init();
+        switch (event) {
+            case TBEvents.released:
+                handlers_released[button] = handler;
+                break;
+            case TBEvents.pressed:
+                handlers_pressed[button] = handler;
+                break;
+        }
     }
+    
+    function init(): void {
+        return;
+        //if (is_init) return;
+        //is_init = true;
+
+        //control.inBackground(() => {
+        //    while (true) {
+        //        poll();
+        //        basic.pause(10);
+        //    }    
+        //})
+    }
+
+    function poll() {
+        if (smbus.readByte(ADDR, REG.MAIN_CONTROL) & 0b1) {
+            smbus.writeByte(ADDR, REG.MAIN_CONTROL, 0x00);
+
+            let button_states = smbus.readByte(ADDR, REG.INPUT_STATUS);
+            let changed = button_states ^ last_button_states;
+            last_button_states = button_states;
+            for (let x = 0; x < 6; x++){
+                let mask = 0b1 << x;
+                if (changed & mask) {
+                    triggerHandler(x, (button_states & mask) ? TBEvents.pressed : TBEvents.released);
+                }
+            }
+        }    
+    }
+
+    function triggerHandler(button: TBButtons, event: TBEvents) {
+        switch (event) {
+            case TBEvents.released:
+                handlers_released[button]();
+                break;
+            case TBEvents.pressed:
+                handlers_pressed[button]();
+                break;
+        }
+    }
+}
     
     /**
       * Read dial
