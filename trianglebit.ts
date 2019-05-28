@@ -69,7 +69,8 @@ namespace trianglebit{
 */
     //%block
     //%shim=trianglebit::test
-    export function test() {
-        uBit.display.send((MSTR)"running test...");
+    export function test(): void{
+        //dummy implement for simulator
+        console.log("running test...");
 	}
 }
