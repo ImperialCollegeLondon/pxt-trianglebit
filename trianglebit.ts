@@ -68,7 +68,8 @@ namespace trianglebit{
     }
 */
     //%block
+    //%shim=trianglebit::test
     export function test() {
-        uBit.serial.send((MSTR)"running test...");
+        uBit.display.send((MSTR)"running test...");
 	}
 }

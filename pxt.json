@@ -1,7 +1,7 @@
 {
 	"name" : "trianglebit",
-	"version": "0.0",
-	"description": "testing",
+	"version": "0.0.1",
+	"description": "Learning kit for children using Micro:Bit",
 	"license": "MIT",
 	"dependencies": {
 		"core": "*"
@@ -13,5 +13,14 @@
 	"testFiles": [
 		"test.ts"
 	],
+	"yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "enabled": 0
+                }
+            }
+        }
+    },
 	"public": false
 }
