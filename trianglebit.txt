@@ -3,19 +3,13 @@
  */
 enum TBPins {
     //% block="button1"
-    Button1 = <number>DAL.MICROBIT_ID_IO_P12,
+    Button1 = DAL.MICROBIT_ID_IO_P13,
     //% block="button2"
-    Button2 = DAL.MICROBIT_ID_IO_P16,
+    Button2 = DAL.MICROBIT_ID_IO_P14,
     //% block="button3"
-    Button3 = DAL.MICROBIT_ID_IO_P14,
+    Button3 = DAL.MICROBIT_ID_IO_P15,
     //% block="button4"
-    Button4 = DAL.MICROBIT_ID_IO_P15,
-    //% block="joystick1"
-    Joystick1 = DAL.MICROBIT_ID_IO_P8
-    //% block="joystick2"
-    Joystick2 = DAL.MICROBIT_ID_IO_P10
-    //% block="dial"
-    Dial = DAL.MICROBIT_ID_IO_P11
+    Button4 = DAL.MICROBIT_ID_IO_P16
 }
 
 /**
@@ -38,8 +32,6 @@ enum TBButtons {
     Button3 = 2,
     //% block="button4"
     Button4 = 3,
-    ////% block="joystick1"
-    //Joystick1 = 4
 }
 
 /**
